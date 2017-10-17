@@ -1,0 +1,19 @@
+h1{
+    color: darkgreen;
+}
+
+.div{
+    font-family: georgia;
+}
+
+h1{
+    margin: center;
+}
+
+p {
+ line-height: 25px;   
+}
+
+a:link {
+    text-decoration: none;
+}

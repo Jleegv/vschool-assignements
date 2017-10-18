@@ -1,19 +1,32 @@
-h1{
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+h1 {
     color: darkgreen;
 }
 
 .div{
-    font-family: georgia;
-}
-
-h1{
-    margin: center;
+    font-family: Georgia;
 }
 
 p {
  line-height: 25px;   
 }
 
-a:link {
-    text-decoration: none;
+#cia-guy {
+    float: left;
+    padding: 0 15px 15px 0;
 }
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+

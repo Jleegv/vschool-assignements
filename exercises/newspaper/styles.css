@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+#container {
+    max-width: 960px;
+    margin: 25px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    display: inline-block; 
+    vertical-align: top;
+    width: 33%;
+    line-height: 150%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*
+A three columned body using p tags. (Hint: you will need to alter the display characteristic.)
+
+Several words in the body should be individually styled using inline elements. (i.e. highlighting, bolding, or text-color change)
+
+An image within the body of the article.
+*/

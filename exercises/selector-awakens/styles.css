@@ -1,0 +1,26 @@
+body{
+  background-color: #111111;
+}
+
+h1{
+  color: #E2E80F;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+p {
+  color: #eeeeee;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+p > .credits {
+  text-decoration: underline;
+  color: #49DAFF;
+}
+
+#film-description {
+  font-size: 14px;
+  font-style: italic;
+}

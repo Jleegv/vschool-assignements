@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+
+/*#france {
+    width: 700px;
+    height: 400px;
+    background-color: #eee;
+}
+
+.box-french {
+    width: calc(100% / 3);
+    height: 100%;
+    display: inline-block;
+}
+
+#germany {
+    width:700px;
+    height: 400px;
+    background-color: #eee;
+}
+
+.box-german {
+    height:calc(100% / 3);
+}
+*/
+
+/*#madagascar {
+    width: 700px;
+    height: 400px;
+    background-color: #eee;
+}
+
+#box-mad {
+    width:25%;
+    height: 100%;
+    display: inline-block;
+    float:left;
+}
+
+.mad-1 {
+    width:75%;
+    height:50%;
+    float:left;
+    display: inline-block;
+}*/
+
+#swiss {
+    width: 500px;
+    height: 500px;
+    background-color:red;
+}
+
+.box-swiss1 {
+    height: 350px;
+    width: 100px;
+}

@@ -1,0 +1,23 @@
+/*//title & top*/
+#title-bar {
+}
+
+#navbar {
+  font-size: 50px;
+  text-align: center;
+  border: 5px solid black;
+  color: red;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 15px;
+  height: 50px;
+  width: 500px;
+}
+/*Baddieblocks*/
+#bar {
+  /*text-align:center;*/
+}
+.bad {
+  max-width: 140px;
+}

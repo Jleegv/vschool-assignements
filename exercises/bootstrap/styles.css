@@ -1,0 +1,8 @@
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color:aqua;
+    background-color: black;
+    color:aqua;
+  }
+.navbar-default:hover {
+    background-color:red;
+}

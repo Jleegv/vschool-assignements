@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mario pest control</title>
-  <link rel="stylesheet" href="styles.css"
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <nav id="title-bar"></nav>
   <h1 id="navbar"> Mario Pest Control</h1>
 
-    <h2 id="bar">Baddies</h2>
+
       <ul style="list-style-type:none">
-        <li class ="bad" id="bar"><img src="https://vignette2.wikia.nocookie.net/deathbattlefanon/images/9/9c/1000px-Goomba_look_NSMBU.png/revision/latest?cb=20150412100601Goombas"></li>
-        <li class ="bad" id="bar"><img src="https://vignette.wikia.nocookie.net/fantendo/images/1/15/Bob-Omb_Buddy_PMTMF.png/revision/latest?cb=20130415212259"></li>
-        <li class ="bad" id="bar"><img src="http://vignette3.wikia.nocookie.net/nintendo/images/5/51/Cheep-Cheep_NSMB.jpg/revision/latest?cb=20130914195943&path-prefix=en"></li>
+        <li>
+          <h2>Goomba</h2>
+          <img class ="bad" src="https://vignette2.wikia.nocookie.net/deathbattlefanon/images/9/9c/1000px-Goomba_look_NSMBU.png/revision/latest?cb=20150412100601Goombas">
+          <p>Price: 5 coins</p>
+      <form>
+        <input type="text" id="goomba" placeholder ="Submit amount!">
+        <p class ="seperator"></p>
+      </form>
+        </li>
+        <li>
+          <h2>Bob-omb</h2>
+          <img class ="bad" src="https://vignette.wikia.nocookie.net/fantendo/images/1/15/Bob-Omb_Buddy_PMTMF.png/revision/latest?cb=20130415212259">
+          <p>Price: 7 coins</p>
+          <form>
+            <input type="text" id="bobomb" placeholder ="Submit amount!">
+            <p class ="seperator"></p>
+            <div></div>
+          </form>
+        </li>
+        <li>
+          <h2>Cheepcheep</h2>
+          <img class ="bad" src="http://vignette3.wikia.nocookie.net/nintendo/images/5/51/Cheep-Cheep_NSMB.jpg/revision/latest?cb=20130914195943&path-prefix=en">
+          <p>Price: 11 coins</p>
+          <form>
+            <input type="text" id="cheepcheep" placeholder ="Submit amount!"><br></br>
+            <button class="buttonUp" type="button" onclick="getTotal()">Submit</button>
+            <h3 id="total"></h3>
+              <div class="coins">Coins acquired</div>
+          </form>
+          </form>
+        </li>
+    </ul>
+  <footer id="foot">
+    <ul>
+      <li class="foot1"> Mario@PlumbersCrack.com</li>
+      <li class="foot1"><a>https://mariolovespeach.org</li></a>
+      <li class="foot1"> 11111 Mushroom Kindgom, Castle Way.  11111-111</li>
     </ul>
 
+  </footer>
   <script src ="app.js" rel ="javascript"></script>
 </body>
 </html>

@@ -1,23 +1,100 @@
 /*//title & top*/
-#title-bar {
-}
+
+
+/*body {
+  background-image:url("mariopic.png");
+  background-repeat:no-repeat;
+}*/
 
 #navbar {
   font-size: 50px;
   text-align: center;
   border: 5px solid black;
   color: red;
-  position: fixed;
   left: 50%;
-  transform: translate(-50%,0);
+  /*transform: translate(-50%,0);*/
   padding: 15px;
   height: 50px;
   width: 500px;
+  margin: 0 auto;
+  font-family: 'Anton', sans-serif;
+}
+h2 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+p {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
+input {
+  text-align: center;
+  display:block;
+  margin:0 auto;
+  font-family: 'Anton', sans-serif;
+}
+.seperator {
+  display:block;
+  height: 4px;
+  background-color:black;
+  width:50%;
+  margin: 60px auto;
+  font-family: 'Anton', sans-serif;
 }
 /*Baddieblocks*/
-#bar {
-  /*text-align:center;*/
-}
+
+
 .bad {
   max-width: 140px;
+  display: block;
+  margin: 0 auto;
+  font-family: 'Anton', sans-serif;
+  /*padding: 80px;*/
+}
+
+/*footer/info*/
+.buttonUp {
+  height:;
+  width:;
+  display:block;
+  margin: 0 auto;
+  background-color:red;
+  font-size:40px;
+  font-family: 'Anton', sans-serif;
+}
+
+#total {
+  text-align:center;
+  font-size:80px;
+  font-family: 'Anton', sans-serif;
+}
+
+.coins {
+  font-size:100px;
+  color:red;
+  text-align:center;
+  font-family: 'Anton', sans-serif;
+}
+
+
+#foot {
+  border:3px solid black;
+  width:100%;
+  font-family: 'Anton', sans-serif;
+}
+
+#foot ul {
+  margin: 0 auto;
+  font-family: 'Anton', sans-serif;
+}
+
+.foot1 {
+  display: inline-block;
+  text-align: center;
+  width: 33%;
+   font-family: 'Anton', sans-serif;
+}
+
+form input {
+  font-size:40px;
 }

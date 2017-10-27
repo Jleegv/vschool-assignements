@@ -84,4 +84,11 @@ font-size: 70%;
 
 li {
   list-style:none;
+
+}
+h4 {
+  font-weight:bolder;
+}
+em {
+  opacity:0.4;
 }

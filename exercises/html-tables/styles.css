@@ -1,0 +1,30 @@
+table {
+  font-family:arial, sans-serif;
+  border-collapse:collapse;
+  width:100%;
+}
+td, th {
+  border: 5px solid white;
+  text-align:left;
+  padding:8px;
+}
+
+tr:nth-child(even) {
+  background-color:#eee;
+}
+th {
+  background-color:aqua;
+}
+
+.header {
+  text-align:center;
+  font-size:45px;
+  background-color:black;
+  color:white;
+  font-family:monospace;
+}
+.tableH {
+  font-family:monospace;
+  font-size:30px;
+  text-align:center;
+}

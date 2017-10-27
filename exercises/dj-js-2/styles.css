@@ -1,0 +1,50 @@
+.box{
+  height:200px;
+  width:200px;
+  background-color:grey;
+  border: 1px solid white;
+  margin:15px;
+}
+
+#box1:hover{
+  background-color:blue;
+  border-radius:50%;
+}
+
+#box2:hover{
+  background-color:orange;
+  border-radius:50%;
+  transition-property:all;
+  transition-duration:1s;
+  transition-timing-function:ease-in;
+  transition-delay:.2s;
+}
+
+#box3:hover{
+  background-color:purple;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  box-shadow:15px 15px 10px;
+}
+
+#box4{
+  background-color:aqua;
+  color:aqua;
+  text-align:center;
+  font-size:50px;
+}
+#box4:hover{
+  background-color:black;
+  height:50px;
+  width:auto;
+  transition-delay: 1s;
+}
+
+#box5:hover{
+  background-color:red;
+
+}
+
+#box6:hover{
+  background-color:green;
+}

@@ -1,0 +1,34 @@
+Your menu JSON should consist of multiple properties, each one an array, represent the array of options available for:
+appetizers
+cold sandwiches
+hot sandwiches
+desserts
+drinks
+
+Each item in each array should be an object consisting of 3 properties:
+name of the item/sandwich
+an array of strings representing the ingredients
+a string description.
+
+You must have at least 2 items (objects) on each submenu (appetizers, cold sands, hot sands, desserts, and drinks)
+
+{
+  "appetizers": [
+    { "name": "French Fries",
+      "ingredients":["Potatos duh"],
+      "description":["A fried potato"],
+      "ishealthy":"FALSE"
+    },
+      { "name": "Frog Legs",
+       "ingredients": ["Frog Legs", "Oil", "Breading"],
+       "description": ["Fried frog legs"],
+       "ishealthy":"TRUE"
+    }]
+}
+{
+  "cold sandwiches": [
+    {"name": "Turkey BLT",
+      "ingredients": ["Turkey", "Bread",5,"Bacon", "Mayo"],
+      "description": }
+  ]
+}

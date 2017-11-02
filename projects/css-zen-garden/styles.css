@@ -10,12 +10,12 @@
   height:120px;
   width:120px;
   margin:75px;
+  margin-left:1px;
 }
 
 h1 {
   /*text-align:center;*/
   display:block;
-  font-size:px;
   vertical-align: middle;
   font-size:60px;
   color:#fff;
@@ -34,16 +34,14 @@ span {
 .floated {
   display:inline-block;
 }
+
+.top-section {
+  margin-top: 100px;
+}
 .viewall {
-  height:50px;
   border:1px solid #325050;
   font-size:28px;
-  width:auto;
-  display:inline-block;
   color:white;
-  opacity:0.5;
-  position:absolute;
-  right:0;
   background-color:#325050;
 }
 
@@ -68,6 +66,12 @@ font-size: 70%;
 .section-two{
     background-image:url("koi-zen.jpg");
     height: 280px;
+    padding:70px;
+}
+
+#section-two-1{
+  background-image:url("contours@2x.png");
+  background-size: 50% auto, auto, auto, cover;
 }
 
 .footer-section {
@@ -91,10 +95,11 @@ h4 {
 em {
   opacity:0.4;
 }
-.image-footer{
+h1.image-footer{
   font-size:40px;
   font-style:italic;
   color: rgba(255, 255, 255, 0.4);
+  text-align: center;
 }
 .img-foot{
   font-style: normal;
@@ -118,8 +123,19 @@ a:hover{
   cursor:pointer;
 }
 
+.footer-section i:hover{
+  color:#607476;
+
+}
+
+.footer-section i {
+  color:white;
+
+}
 .footer-section ul{
   text-align:center;
+  text-decoration: none;
+  color:white;
 }
 .footer-section ul li{
   display:inline-block;
@@ -127,5 +143,23 @@ a:hover{
   color:white;
   opacity:0.4;
   padding:40px;
+}
+
+#participation {
+  background-color: rgba(138,188,159,0.5);
+}
+
+#csszen{
+  margin-top:61px;
+}
+
+button:hover{
+  color:#607476;
+  position: absolute;
+}
+
+.contours{
+  width:100%;
+  height:auto;
 
 }

@@ -5,32 +5,25 @@ console.log("Good luck, " + name + "!");
 read.keyInYN("Are you ready to begin?");
 console.log("Prepare yourself! Pick your weapon of choice");
 
-const inventory = [];
 let weapons = ["Sword", "Staff"];
 let input = read.keyInSelect(weapons, 'Which weapon?');
 
 console.log(weapons[input] + ' is a fine choice!');
 
-function Player(name, health, damage) {
+function Player(name, inventory) {
   this.name = name;
-  this.health = health;
-  this.damage = damage;
-  this.inventory = weapons[input];
+  this.health = 100;
+  this.damage = 15;
+  this.inventory = inventory;
 }
 
-// while(monsters.health > 0){
-//   return monsterDamage
-// }if (monsters.health <= 0){
-//   return newItem.push(inventory)
-// }
-
-let player = new Player(name, 100, 30)
-let newItem = ['Health Potions','Shield'];
+let player = new Player(name, [weapons[input]]);
 
 const monsters = [{
     name: "OogaBooga",
     health: 100,
     type: "Easymode",
+    newItem: "Health Potion",
     abilities() {
       return Math.floor(Math.random() * 10)
     }
@@ -39,16 +32,18 @@ const monsters = [{
     name: "Pikachewchew",
     health: 150,
     type: "Pewpew",
+    newItem: "Shield",
     abilities() {
-      return Math.floor(Math.random() * 10)
+      return Math.floor(Math.random() * 15)
     }
   },
   {
     name: "Da-boss",
     health: 250,
     type: "Hope you dont run into",
+    newItem: ["Key to the treasure"],
     abilities() {
-      return Math.floor(Math.random() * 15)
+      return Math.floor(Math.random() * 20)
     }
   }
 ];
@@ -70,35 +65,45 @@ function walk() {
       console.log("Player Health: " + player.health);
       console.log("Inventory: ");
       console.log(player.inventory);
-//NOT YET WORKING!!
-    } else if (monsters.health <= 0)
-      inventory.push(newItem)
-
-    {
-
     }
   }
 }
+
 
 function fight(monster) {
   console.log(monster)
   console.log("You've run into " + monster.name + "!")
   let stayRun = read.keyInYN("Would you like to fight " + monster.name + " (y)" + " or attempt to run (n): ");
   if (stayRun) {
-    while (monster.health > 0) {
+    while (monster.health > 0 ) {
+      //if stayrun
       console.log("\nPlayer Damage: " + attackEnemy(monster));
       console.log("Monster Health: " + monster.health);
       console.log("\nMonster Damage: " + enemyAttack(monster));
       console.log("Player Health: " + player.health);
+      // NEW CODE TO TEST
+      //else if !stayrun
+      if (monster.health <= 0) {
+        player.inventory.push(monster.newItem)
+        console.log(player.invetory)
+      }
+      if (player.health >= 1) {
+        //run function to ask if they want to run or continue fighting
+        fightOn(monster);//make separate function here.
+        console.log('You are still alive');
+      } else if (player.health <= 0) {
+        console.log(player.health + "health")
+        die();
+        break;
+      }
     }
   } else {
-//NOT YET WORKING!
     if (!stayRun) {
-      run(Math.floor(Math.random) * .5)
+      let run = Math.floor(Math.random() * 100) + 1;
       if (run >= 50) {
         console.log("You got away!")
       } else {
-        fight()
+        fight(monster);
       }
     }
   }
@@ -115,14 +120,17 @@ function enemyAttack(currentMonster) {
   return monsterDamage;
 }
 
+function fightOn(currentMonster){
+
+}
+
+function run() {
+
+}
+
+function die() {
+  console.log("You died")
+}
+
 walk();
-
-
-// function run(){
-//     if(1 in 2){
-//         //tell user that they successfully got away and can continue walking
-//         //****THIS PART IS IMPORTANT. DO NOT CALL WALK()****
-//     } else {
-//         //tell user they were not able to run
-//         //****THIS PART IS IMPORTANT. DO NOT CALL fight() You could, however, call one of the attack functions****
-// }
+run();

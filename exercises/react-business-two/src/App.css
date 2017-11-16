@@ -1,0 +1,70 @@
+/*Navbar*/
+.navbar-inverse {
+  background-color:#3e3e3e;
+  /*background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));*/
+  border:none;
+  color:white;
+}
+.navbar-inverse:hover{
+  cursor: pointer;
+}
+
+/*Body and text*/
+p {
+  padding: 20px 0;
+}
+.seperate{
+  background-color: #b5a8a8;
+  height:5px;
+  width:100%;
+}
+
+/*Middle containers with pictures and buttons*/
+.picture{
+  border:3px solid grey;
+  text-align: center;
+  border-radius:10%;
+  height:290px;
+}
+
+.picture img{
+  height:190px;
+}
+.middle-picture{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.picture-title{
+  font-size:20px;
+  font-weight:bold;
+  font-style: italic;
+}
+
+.myBtn:hover{
+  background-color:#eee;
+  cursor:pointer;
+  color:black;
+}
+
+/*Footer section*/
+.foot{
+  text-align: center;
+  background-color: #3e3e3e;
+  border:1px solid black;
+  height:75px;
+  width:100%;
+  color:white;
+  padding-top:10px;
+}
+.footer-text{
+  color:white;
+  font-size:35px;
+  opacity:0.5;
+}
+
+.footer-text:hover{
+  cursor:pointer;
+  color:white;
+  opacity:1;
+  text-decoration: none;
+}

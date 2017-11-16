@@ -22,11 +22,14 @@ function hasDuplicates(keyWords) {
   return results;
 }
 
-//ES6 not yet working
-// const hasDuplicates = keyWords => {
-//   const codeArr = keyWords.replace("/\w/g", " ").toLowerCase().split(" ").sort();
-//   const double = codeArr.filter((item, index) => codeArr[index] === codeArr[index + 1])
-// }
+//ES6 VERSION
+const matching = str => {
+    const codeArr = str.replace('/\W/g', ' ').toLowerCase().split(' ').sort();
+    console.log(codeArr);
+    const double = codeArr.filter((item,index) => codeArr[index] === codeArr[index + 1]);
+    return double.filter((item,index) => double[index] !== double[index + 1])
+}
+
 
 console.log(hasDuplicates(keyWords));
 module.exports = hasDuplicates;

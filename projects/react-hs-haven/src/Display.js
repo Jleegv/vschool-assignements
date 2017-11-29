@@ -2,7 +2,7 @@ import React from "react";
 
 function Display(props){
     return(
-    <div>
+    <div className="container-">
       <h1>High Score: {props.score.highScore}</h1>
       <h2>Name: {props.score.name}</h2>
       <h2>Game: {props.score.game}</h2>

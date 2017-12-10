@@ -10,7 +10,7 @@ export default function Navigate() {
       <Navbar.Brand>
         <a href="#">Portfolio</a>
       </Navbar.Brand>
-      <Navbar.Toggle/>
+      {/* <Navbar.Toggle/> */}
     </Navbar.Header>
     <Navbar.Collapse>
 

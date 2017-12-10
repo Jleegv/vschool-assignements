@@ -19,6 +19,8 @@
   margin-bottom:0px;
   box-shadow: 5px 5px 10px #ccc;
   padding:20px;
+  position:relative;
+  z-index: 999;
 }
 
 .nav {
@@ -30,30 +32,203 @@
     border-width: 0 0 1px;
 }
 
-/*Images and Icons
+.banner-img {
+  background-image: url("../images/home-page-img.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position:relative;
+  height:100vh;
+}
 
-=================*/
-/*#icon-facebook {
-  font-size:100px;
+.banner-txt {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color:whitesmoke;
+  font-style: italic;
+}
+
+/* Portfolio
+     Page
+=============*/
+
+.port-title {
+  text-align: center;
+  margin-bottom:15px;
+}
+
+.port-txt {
+  margin-bottom:30px;
+  line-height:150%;
+}
+
+.work-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 8px;
+}
+
+.box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.work-card:hover .overlay {
+  height: 100%;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+.modal-content {
+  background-color: #000;
+  color: #fff;
+}
+
+/*Contact Page
+    Contact
+==============*/
+.contact-background {
+  background-color:#e7e7e7;
+  height:100vh;
+  position:relative;
+}
+
+.contact-container {
+  border-color:1px solid black;
+  background-color:whitesmoke;
+  height:500px;
+  max-width:960px;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  position:absolute;
+}
+
+.contact-title {
+  text-align:center;
+}
+
+.contact-input {
+  width:100%;
+  padding:10px;
+}
+
+.contact-message {
+  width:100%;
+  padding:10px;
+  margin-top:30px;
+}
+
+.submit-btn {
+  margin-top:30px;
+  float:right;
+  background-color:#337ab7;
+  font-size:18px;
+  color:whitesmoke;
+  padding:10px;
+  border-radius:6px;
+  width:110px;
+  transition: background-color .2s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color:#7cad85;
+  color:whitesmoke;
 
 }
 
-#icon-twitter {
+.submit-btn:active {
+  background-color: #eee;
+  box-shadow:inset 0 5px #666;
+  transform: translateY(2px);
+}
 
-}*/
+/*Contact Page
+  Right side
+==============*/
+.side-bar {
+  background-color:#e7e7e7;
+  border-radius:4px;
+  padding:10px;
+  margin-right:10px;
+  margin-top:15px;
+  margin-bottom:15px;
+  height:470px;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.ul-title {
+  text-align: center;
+}
+
+.li-txt {
+  line-height: 150%;
+  font-size:19px;
+  padding:20px;
+}
+
+#download-icon {
+  font-size:30px;
+  margin-left:60px;
+  margin-top:20px;
+  transition: color .2s ease-in-out;
+}
+
+#download-icon:hover {
+  color:#7cad85;
+}
+
+
+
+
+
+
 /*Footer Section
      Footer
 ==============*/
 
-.footer {
+footer {
   width:100%;
-  height:80px;
+  height:90px;
   background-color: #f8f8f8;
   border-color: #e7e7e7;
-  box-shadow: 1px 1px 10px #ccc;
-  /*filter:blur(2px);*/
 }
 
-.left-text {
-  margin-top:28px;
+.footer-txt {
+  padding-top:22px;
+}
+
+footer .nav li {
+  font-size:50px;
+  display:inline-block;
 }

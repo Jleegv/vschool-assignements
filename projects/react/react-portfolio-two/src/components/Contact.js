@@ -10,7 +10,7 @@ export default function Contact() {
         <Row>
           <Col xs={12} md={8}>
             <h1 className="contact-title">Email Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras scelerisque elementum justo quis pulvinar. Cras nec massa tempor, varius ex vitae, aliquet lacus. Etiam nec varius dui, vitae vulputate erat. Ut laoreet lorem at augue feugiat, vel ultrices libero ornare. Integer tincidunt, velit vel bibendum accumsan, augue nibh feugiat metus, eget volutpat tellus diam quis urna. Quisque lacus est, pharetra in venenatis vel, tincidunt ut metus. Integer suscipit placerat justo sit amet ullamcorper.</p>
+            <p className="contact-txt">If you would like to get into contact with me via email feel free to leave a message below. I can typically respond within one to two business days. If you prefer I can also accept phone calls Mon-Fri 8am to 5pm. Prefer email on the weekends. I Look forward to hearing from you!</p>
             <Row>
               <Col md={6} sm={12}>
                 <input placeholder="*Name" className="contact-input"/>
@@ -29,9 +29,8 @@ export default function Contact() {
             <aside className="side-bar">
               <ul className="contact-list">
                 <h2 className="ul-title">Contact</h2>
-                    <li className="li-txt">Email: @gmail.com</li>
                     <li className="li-txt">Telephone: (530)613-5095</li>
-                    <li className="li-txt">Address: 123 Polar Rd</li>
+                    <li className="li-txt">Address:<br></br> 12249 Poplar Rd</li>
                     <li className="li-txt">Auburn, CA 95602</li>
                 <a href="downloadlink" download>
                 <i id="download-icon"

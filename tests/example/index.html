@@ -1,0 +1,59 @@
+<html>
+
+	<head>
+		<title>Golf My Way</title>
+		<link rel="stylesheet" href="./styles.css">
+	</head>
+
+	<body>
+		<p>
+			Arm Length:
+			<select id="arm_length" onchange="getLength(this)">
+				<option></option>
+				<option value=.5>Short</option>
+				<option value=.65>Average</option>
+				<option value=1>Long</option>
+			</select>
+		</p>
+		<p>
+			<table>
+				<tr>
+					<td></td>
+					<td>Power Level 1</td>
+					<td>Power Level 2</td>
+                    <td>Power Level 3</td> 
+					<td>Power Level 4</td>
+					<td>Power Level 5</td>
+				</tr>
+				<tr>
+					<td class="putter-type">Putter</td>
+					<td id="putter0"></td>
+					<td id="putter1"></td>
+					<td id="putter2"></td>
+					<td id="putter3"></td>
+					<td id="putter4"></td>
+				</tr>
+				<tr>
+					<td class="putter-type">Mid-Range</td>
+					<td id="mid-range0"></td>
+					<td id="mid-range1"></td>
+					<td id="mid-range2"></td>
+					<td id="mid-range3"></td>
+					<td id="mid-range4"></td>
+				</tr>
+                <tr>
+                    <td class="putter-type">Driver</td>
+                    <td id="driver0"></td>
+                    <td id="driver1"></td>
+                    <td id="driver2"></td>
+                    <td id="driver3"></td>
+                    <td id="driver4"></td>
+                    
+                </tr>
+			</table>
+		</p>
+	</body>
+
+	<script type="text/javascript" src="./index.js"></script>
+
+</html>

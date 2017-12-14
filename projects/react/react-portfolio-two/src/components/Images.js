@@ -9,7 +9,7 @@ export default function HomeImg() {
 // }
 return (
   <div className="banner-img">
-    <div className="banner-txt"><h1>Web Development by jLee</h1></div>
+    {/* <div className="banner-txt"><h1>Web Development by jLee</h1></div> */}
   </div>
   )
 }

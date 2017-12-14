@@ -18,9 +18,10 @@
 .navbar {
   margin-bottom:0px;
   box-shadow: 5px 5px 10px #ccc;
-  padding:20px;
+  padding:15px;
   position:relative;
   z-index: 999;
+  position:relative;
 }
 
 .nav {
@@ -66,10 +67,12 @@
 
 .work-card {
   position: relative;
-  background-color: #fff;
+  background-color: #eee;
   border-radius: 8px;
   height: 300px;
   cursor: pointer;
+  margin-bottom:25px;
+  margin-top:20px;
 }
 
 .overlay {
@@ -107,43 +110,51 @@
 }
 
 .modal-content {
-  background-color: #000;
-  color: #fff;
+  background-color:#e7e7e7;
+  color:#000;
 }
 
 /*Contact Page
     Contact
 ==============*/
 .contact-background {
-  background-color:#e7e7e7;
+  background-color:#8ab349;
   height:100vh;
   position:relative;
+  background-image:url("../images/diagmonds.png");
+
 }
 
 .contact-container {
-  border-color:1px solid black;
+  /*border:1px solid black;*/
   background-color:whitesmoke;
-  height:500px;
-  max-width:960px;
+  height:650px;
+  max-width:1200px;
   top:50%;
   left:50%;
   transform:translate(-50%, -50%);
   position:absolute;
+  box-shadow: 0px 2px 5px 5px #474343;
 }
 
 .contact-title {
   text-align:center;
 }
 
+.contact-txt {
+  font-size:18px;
+}
+
 .contact-input {
   width:100%;
-  padding:10px;
+  padding:15px;
 }
 
 .contact-message {
   width:100%;
-  padding:10px;
+  padding:15px;
   margin-top:30px;
+  height:125px;
 }
 
 .submit-btn {
@@ -152,9 +163,9 @@
   background-color:#337ab7;
   font-size:18px;
   color:whitesmoke;
-  padding:10px;
+  padding:16px;
   border-radius:6px;
-  width:110px;
+  width:130px;
   transition: background-color .2s ease-in-out;
 }
 
@@ -174,13 +185,13 @@
   Right side
 ==============*/
 .side-bar {
-  background-color:#e7e7e7;
+  background-color:#e7e7e7; /*e7e7e7*/
   border-radius:4px;
   padding:10px;
-  margin-right:10px;
-  margin-top:15px;
+  margin-right:3px;
+  margin-top:18px;
   margin-bottom:15px;
-  height:470px;
+  height:615px;
 }
 
 .contact-list {
@@ -189,18 +200,19 @@
 
 .ul-title {
   text-align: center;
+  font-weight:bold;
 }
 
 .li-txt {
-  line-height: 150%;
-  font-size:19px;
+  line-height: 250%;
+  font-size:25px;
   padding:20px;
 }
 
 #download-icon {
-  font-size:30px;
-  margin-left:60px;
-  margin-top:20px;
+  font-size:40px;
+  margin-left:75px;
+  margin-top:50px;
   transition: color .2s ease-in-out;
 }
 
@@ -225,10 +237,17 @@ footer {
 }
 
 .footer-txt {
-  padding-top:22px;
+  padding-top:20px;
+  font-size:25px;
 }
 
 footer .nav li {
   font-size:50px;
   display:inline-block;
+}
+
+.logo-icon {
+  width: 25%;
+  display: block;
+  margin: 0 auto;
 }

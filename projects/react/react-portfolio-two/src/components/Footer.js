@@ -11,25 +11,29 @@ export default function Footer() {
           </Col>
 
           <Col sm={12} md={4}>
+            <img className="logo-icon" alt="" src={require("../images/jeremey-logo-icon.png")}/>
+          </Col>
+
+          <Col sm={12} md={4}>
             <Nav pullRight>
-              <NavItem>
-                <i id="icon-facebook"
-                   class="fa fa-facebook"
-                   aria-hidden="true"></i>
-              </NavItem>
-
-              <NavItem>
-                <i id="icon-twitter"
-                   class="fa fa-twitter"
-                  aria-hidden="true"></i>
-              </NavItem>
-
-              <NavItem>
-                <i id="icon-github"
-                  class="fa fa-github"
-                  aria-hidden="true"></i>
+                <NavItem>
+                  <i id="icon-linkedin"
+                     class="fa fa-linkedin"
+                     aria-hidden="true"></i>
                 </NavItem>
-              </Nav>
+
+                <NavItem>
+                  <i id="icon-facebook"
+                     class="fa fa-facebook"
+                     aria-hidden="true"></i>
+                </NavItem>
+
+                <NavItem>
+                  <i id="icon-github"
+                    class="fa fa-github"
+                    aria-hidden="true"></i>
+                </NavItem>
+            </Nav>
           </Col>
         </Row>
       </Grid>

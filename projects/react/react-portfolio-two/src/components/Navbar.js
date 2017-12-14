@@ -7,10 +7,7 @@ export default function Navigate() {
     <div>
     <Navbar collapseOnSelect>
     <Navbar.Header>
-      <Navbar.Brand>
-        <a href="#">Portfolio</a>
-      </Navbar.Brand>
-      {/* <Navbar.Toggle/> */}
+      <img src={require("../images/jeremey-logo.png")}/>
     </Navbar.Header>
     <Navbar.Collapse>
 

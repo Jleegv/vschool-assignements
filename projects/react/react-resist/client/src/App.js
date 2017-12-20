@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigate from "./components/Navbar";
 import Home from "./components/Home";
-import Info from "./components/Info";
+// import Info from "./components/Info";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 // import Contact from "./components/Contact";

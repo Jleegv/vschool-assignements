@@ -7,11 +7,11 @@ export default function Navigate() {
     <div>
     <Navbar collapseOnSelect>
     <Navbar.Header>
-      {/* <img src={require("../images/jeremey-logo.png")}/> */}
+      <img className="logo" src={require("../images/resist-rifles-logo-01.png")}/>
     </Navbar.Header>
     <Navbar.Collapse>
 
-      <Nav pullRight="pullRight">
+      <Nav pullRight>
         <LinkContainer to="/home">
           <NavItem eventKey={1} href="1">Home</NavItem>
         </LinkContainer>
@@ -26,6 +26,10 @@ export default function Navigate() {
 
         <LinkContainer to="/cart">
           <NavItem eventKey={4} href="1">Cart</NavItem>
+        </LinkContainer>
+
+        <LinkContainer to="/forum">
+          <NavItem eventKey={5} href="1">Forum</NavItem>
         </LinkContainer>
 
       </Nav>

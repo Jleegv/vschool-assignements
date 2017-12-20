@@ -3,19 +3,16 @@ const app = express();
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+const cors = require("cors");
+const port = process.env.PORT || 8000;
 
-const port = process.env.PORT || 3000;
-
+app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan("dev"));
-app.use("/parts", require("./routes/arRoutes.js"))
-
-app.listen(port, ()=>{
-  console.log(`Your server is listening on port ${port}`)
-})
+app.use("/ar_inventory", require("./routes/arRoutes.js"))
 
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/ar-inventory",
+mongoose.connect("mongodb://localhost/ar_inventory",
     {useMongoClient: true},
     err => {
         if (err) throw err;
@@ -23,7 +20,6 @@ mongoose.connect("mongodb://localhost/ar-inventory",
     }
 );
 
-// Check if the server is working correctly
-// app.get("/", (req, res) => {
-//     res.send("It's working!");
-// });
+app.listen(port, ()=>{
+  console.log(`Your server is listening on port ${port}`);
+});
